@@ -1,34 +1,37 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<PackageId>IPE.SmsIr</PackageId>
-		<Version>1.2.7</Version>
-		<Authors>IPDev</Authors>
-		<Company>IPE</Company>
-		<Copyright></Copyright>
-		<Description>A cross-platform library for the sms.ir provider, written in C#</Description>
-		<PackageIcon>smsir-logo.png</PackageIcon>
-		<RepositoryUrl>https://github.com/IPeCompany/SmsPanelV2.dotNet</RepositoryUrl>
-		<PackageTags>sms, sms.ir, smsir,send sms, dotnet sms, c# sms, send message, message, receive message, receive</PackageTags>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://sms.ir/</PackageProjectUrl>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>IPE.SmsIr</PackageId>
+    <Version>1.2.7</Version>
+    <Authors>IPDev</Authors>
+    <Company>IPE</Company>
+    <Copyright>Copyright © IPE 2025</Copyright>
+    <Description>A lightweight and cross-platform C# library for interacting with the sms.ir messaging service.</Description>
+    <PackageIcon>smsir-logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/IPeCompany/SmsPanelV2.dotNet</RepositoryUrl>
+    <PackageTags>sms;sms.ir;smsir;send sms;dotnet sms;c# sms;send message;message;receive message;receive</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://sms.ir/</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<None Include="..\README.md">
-		  <Pack>True</Pack>
-		  <PackagePath>\</PackagePath>
-		</None>
-		<None Include="..\smsir-logo.png">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\smsir-logo.png">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+  </ItemGroup>
 
 </Project>
